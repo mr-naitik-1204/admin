@@ -40,16 +40,27 @@ function Dashbord() {
                 sx={{
                     width: drawerWidth,
                     flexShrink: 0,
-                    [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
+                    [`& .MuiDrawer-paper`]: { 
+                        width: drawerWidth, 
+                        boxSizing: 'border-box',
+                        height: '100vh'
+                    },
                 }}
             >
                 <Toolbar />
                 <Box sx={{ overflow: 'auto' }}>
-                    <List>
+                    <List >
                         {['Dashboard', 'Category', 'Subcategory', 'Q & A'].map((text, index) => (
-                            <ListItem key={text} disablePadding>
-                                <Link to={links[index]} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                    <ListItemButton>
+                            <ListItem key={text} disablePadding sx={{width:"100%"}}>
+                                <Link to={links[index]} style={{ textDecoration: 'none', color: 'inherit',width:"90%",margin:"auto" }}>
+                                    <ListItemButton
+                                        sx={{
+                                            '&:hover': {
+                                                backgroundColor: '#1976D2' ,
+                                                color:"white"
+                                            }
+                                        }}
+                                    >
                                         <ListItemIcon>
                                             {iconList[index]}
                                         </ListItemIcon>
