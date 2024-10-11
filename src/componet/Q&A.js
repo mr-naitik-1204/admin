@@ -1,17 +1,8 @@
 
 import React from 'react'
 import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import CssBaseline from '@mui/material/CssBaseline';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
+
 import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
@@ -19,9 +10,6 @@ import SpaceDashboardIcon from '@mui/icons-material/SpaceDashboard';
 import CategoryIcon from '@mui/icons-material/Category';
 import ControlPointDuplicateIcon from '@mui/icons-material/ControlPointDuplicate';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import MeetingRoomIcon from '@mui/icons-material/MeetingRoom';
-import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -76,13 +64,13 @@ const rows = [
 
 function QA() {
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex',marginTop:"80px" }}>
      
       <Box
         component="main"
-        sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 ,paddingLeft:'0px'}}
+        sx={{ flexGrow: 1, bgcolor: 'background.default', p:0 ,paddingLeft:'0px'}}
       >
-        <Toolbar />
+        {/* <Toolbar /> */}
         <Typography sx={{ marginBottom: 2, display: 'flex', justifyContent: 'space-around',marginTop:'-88px' }}>
           <Box sx={{ flexGrow: 1 }}>
             {/* <Autocomplete
