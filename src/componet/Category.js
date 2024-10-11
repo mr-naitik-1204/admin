@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 function Category() {
   return (
     <div>
-        <TextField id="outlined-basic" label="surch category0" variant="outlined" />
+        <TextField id="outlined-basic" label="surch category" variant="outlined" sx={{width:"85%"}} />
         <Button variant="contained" sx={{height:"55px"}}>Add Category</Button>
     </div>
   )

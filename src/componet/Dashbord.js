@@ -33,6 +33,9 @@ function Dashbord() {
                     <Typography variant="h6" noWrap component="div">
                         Interview Portal
                     </Typography>
+                    {['Dashboard', 'Category', 'Subcategory', 'Q & A'].map((item,index)=>{
+
+                    })      }
                 </Toolbar>
             </AppBar>
             <Drawer
@@ -47,6 +50,7 @@ function Dashbord() {
                     },
                 }}
             >
+               
                 <Toolbar />
                 <Box sx={{ overflow: 'auto' }}>
                     <List >
